@@ -1,0 +1,68 @@
+<!-- theory 
+    
+● What is Emmet?
+Emmet is a shortcut where if we type a short keys it will expand to long code  
+
+● Difference between a Library and Framework?
+A library is a code where we import it in our code and reuse those functions
+A framework provides whole support 
+
+● What is CDN? Why do we use it?
+Content Delivery Network is a system of interconnected servers where it becomes easy to retrieve data
+the nearest server 
+
+● Why is React known as React?
+React is aptly known as React because it reacts quickly to changes without reloading the whole page
+
+● What is crossorigin in script tag?
+it allows other webpages from other servers to be rendered on the webpage
+
+● What is diference between React and ReactDOM?
+React is used for components of react
+ReactDOM is used for rendering the content on the webpage 
+
+● What is difference between react.development.js and react.production.js files via CDN?
+react.development.js is used for development purpose 
+react.production.js is used for production purpose
+
+● What is async and defer? 
+async and defer are boolean values used with script tag 
+
+if we use async the html parsing and script loading are done asynchronously as soon as it encounters the loaded script 
+the html parsing stops and script execution starts and as the script execution is finished html parsing starts 
+
+if we use defer the html parsing and script loading are done asynchronously but only when html parsing finishes it executes the loaded script 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="React.css">
+</head>
+<body>
+    <div id = 'root'>
+        <!-- hello world through html  -->
+        <!-- <h1>this is h1 tag</h1> -->
+    </div>
+    <!-- hello world through JavaScript DOM -->
+    <!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerText = 'this is h1 tag';
+        document.getElementById('root').append(heading);
+    </script> -->
+    <!-- importing React library in the code -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- hello world through React and ReactDOM -->
+    <!-- <script>
+        const heading = React.createElement('h1',{id:'heading'},'this is h1 tag');
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(heading);
+    </script> -->
+    <!-- linking external React js code -->
+    <script src = "React.js"></script>
+</body>
+</html>
